@@ -1,0 +1,66 @@
+#Petstore h2, #Petstore h3{
+    color:darkgreen;
+}
+
+.Petstore_Section {
+    text-align:left;
+    width: 90%;
+    margin: auto;
+}
+
+.Petstore_Section h2, a {
+    text-align: center;
+}
+
+.Petstore_Section article h3 {
+    float: left;
+}
+
+.Petstore_Section article img {
+    float: right;
+}
+
+.Petstore_Section article, .Petstore_Section a {
+    clear: both;
+    display: block;
+    padding: 30px;
+}
+
+.Petstore_Section article h3 span {
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp img{
+max-width: 80px;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+.creature-img {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+}
+
+.remaining {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+    padding: 2px;
+    color: seashell;
+}

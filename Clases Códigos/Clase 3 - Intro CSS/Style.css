@@ -1,0 +1,107 @@
+html, body {
+    font-size: 18px;
+    font-family: 'Viaoda Libre', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://previews.123rf.com/images/seregam/seregam1207/seregam120700116/14383672-cuerdas-y-la-br%C3%BAjula-en-la-textura-viejo-vintage-antiguo-documento-de-antecedentes.jpg') fixed;
+    background-size: cover;
+}
+
+/* Starts header + nav + logo */
+
+header {
+    background-color: #e7d4b5;
+}
+
+nav {
+    display: inline-block;
+    width: 75%;
+    padding-right: 30px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+.logo {
+    width: 24%;
+    display: inline-block;
+    padding: 10px 0px 0px 15px;
+    box-sizing: border-box;   
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+color: #5e454b;
+text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #962d2d;
+    }
+
+/* Ends header + nav + logo */
+
+
+/* Starts banner */
+
+#banner {
+    background-image: url('https://i.pinimg.com/originals/bb/13/f6/bb13f6520c88a6774ec0e154d36bcc5f.jpg');
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    width: 1140px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255,255,255,0.75);
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Ends banner */
+
+.Description_Section img {
+    min-width: 300px;
+    max-width: 350px;
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+h4 {
+    color: blueviolet;
+}
+
+/* Es importante separar por comas los selectores 
+y colocar cada regla de forma completa */
+
+/* Si añado la propiedad !important digo que ese
+elemento tiene más peso (especifidad)*/
+
+#Petstore h2, #Petstore h3{
+    color: darkred !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
