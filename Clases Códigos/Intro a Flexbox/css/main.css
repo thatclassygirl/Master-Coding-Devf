@@ -1,0 +1,53 @@
+body {
+    margin: 130px;
+    padding: 130px;
+}
+
+
+/* de izquierda a derecha o bien de arriba a abajo */
+.parent {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-style: groove;
+    border-radius: 4%;
+    width: 550px;
+    height: 550px;
+}
+
+
+.child {
+    color: darkblue;
+    background-color: skyblue;
+    border-color: steelblue;
+    border-style: groove;
+    width: 10%;
+    height: 35px;
+    font-size: 35px;
+}
+
+
+.child2 {
+    order: 0;
+    color: darkblue;
+    background-color: skyblue;
+    border-color: steelblue;
+    border-style: groove;
+    width: 10%;
+    height: 35px;
+    font-size: 35px;
+}
+
+
+.child3 {
+    order: 0;
+    color: darkblue;
+    background-color: skyblue;
+    border-color: steelblue;
+    border-style: groove;
+    width: 10%;
+    height: 35px;
+    font-size: 35px;
+}
