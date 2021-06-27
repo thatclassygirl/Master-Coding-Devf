@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Creación de nuestros layouts */
+
+body {
+    min-height: 100vh;
+    background: cornflowerblue;
+}
+
+
+/* auto es reemplazado por algún valor apropiado
+margin: o auto desplazar contenedores en este caso al centro */
+.contenedor-padre {
+    background-color: rgb(82, 233, 253);
+    min-height: 100vh;
+    width: 90%; /* Contenedores padre */
+    margin: 0 auto;
+    flex: 0 0 300px; /* flex-grow, flex-shrink, flex-basis */
+    display: flex;
+    flex-direction: row;
+}
+
+
+header {
+    background-color: burlywood;
+    color: crimson;
+    flex: 0 0 300px;
+    border: 1px solid sienna;
+}
+
+
+main {
+    background-color: beige;
+    color: crimson;
+    flex: 1 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.mainblocks {
+    background-color: whitesmoke;
+    border: 4px solid darkgrey;
+    min-height: 250px;
+    flex: 1 0 20%;
+}
+
+
+/* Aquí inician las media queries */
+/* Estilos para tables */
+@media screen and (max-width: 1000px) {
+    .contenedor-padre {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para celular */
+@media screen and (max-width: 700px) {
+    .box5 , .box6 {
+        display: none;
+    }
+}
