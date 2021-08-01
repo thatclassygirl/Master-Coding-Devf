@@ -31,6 +31,15 @@ var agrega = `Agrega la pechuga de pollo deshebrada, decora con Media Crema NEST
 console.log(calienta);
 
 // Paso 4: Servir caliente la comida al Documento HTML
+var pasosHTML = ""
+var index = 0;
+while (index<ingredientes.length) {
+    console.log(pasosHTML);
+    pasosHTML = pasosHTML +
+    `<li>${ingredientes[index][0]} ${ingredientes[index][1]}</li>`;
+    index++;
+}
+
 document.write(`
     <img src="https://d1uz88p17r663j.cloudfront.net/resized/089889c402055309e72c002ff08f82d1_CHILAQUILES_ROJOS_150_1200_600.jpg" alt"Chilaquiles">
     <br>
@@ -38,16 +47,7 @@ document.write(`
     <h1>Cocinando unos Chilaquiles Rojos con Pollo</h1>
     <h2>Ingredientes</h2>
     <ul>
-        <li>${ingredientes[0][0]} ${ingredientes[0][1]}</li>
-        <li>${ingredientes[1][0]} ${ingredientes[1][1]}</li>
-        <li>${ingredientes[2][0]} ${ingredientes[2][1]}</li>
-        <li>${ingredientes[3][0]} ${ingredientes[3][1]}</li>
-        <li>${ingredientes[4][0]} ${ingredientes[4][1]}</li>
-        <li>${ingredientes[5][0]} ${ingredientes[5][1]}</li>
-        <li>${ingredientes[6][0]} ${ingredientes[6][1]}</li>
-        <li>${ingredientes[7][0]} ${ingredientes[7][1]}</li>
-        <li>${ingredientes[8][0]} ${ingredientes[8][1]}</li>
-        <li>${ingredientes[9][0]} ${ingredientes[9][1]}</li>
+        ${pasosHTML}
     </ul>
     <h2>Preparación</h2>
         <h4>Calienta</h4>
