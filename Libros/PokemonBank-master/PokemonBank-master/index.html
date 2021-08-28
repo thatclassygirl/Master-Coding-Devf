@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/b271900939.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/icon.png">       
+    <title>PokeBank</title>
+</head>
+<body>
+    <audio id="background">
+        <source src="./assets/background.mp3" type="audio/mp3">
+    </audio>
+
+    <main class="machine">
+        <button id="turn" onclick="turnOn()"><i class="fas fa-power-off"></i></button>
+        <div class="screen">
+
+            <!-- Main Content -->
+            <div class="content">
+                <img class="logo" src="./assets/logo.png" alt="bank_logo">
+                <h1>¡Bienvenido!</h1>
+                <p>Por favor, selecciona tu usuario</p>
+                <div id="users">
+                    <div class="user" onclick="getData(this)">
+                        <img class="user-logo" src="./assets/charmander.png" alt="charmander">
+                        <p class="poke-name">Charmander</p>
+                    </div>
+                    <div class="user" onclick="getData(this)">
+                        <img class="user-logo" src="./assets/pikachu.png" alt="pikachu">
+                        <p class="poke-name">Pikachu</p>
+                    </div>
+                    <div class="user" onclick="getData(this)">
+                        <img class="user-logo" src="./assets/squirtle.png" alt="squirtle">
+                        <p class="poke-name">Squirtle</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Login -->
+            <div id="login">
+                <img class="logo" src="./assets/logo.png" alt="bank_logo">
+                <div id="login-content">
+                    <h2>Hola de nuevo <span id="username">Nombre</span></h2>
+                    <p>Por favor ingresa tu contraseña</p>
+                    <form>
+                        <input id="password" type="password" name="password">
+                    </form>
+                    <button class="enter-button" onclick="check()">Ingresar</button>
+                    <p class="error-message">Esa no es la contraseña. Intenta nuevamente</p>
+                </div>
+            </div>
+
+            <!-- Saldo -->
+            <div id="account">
+                <img class="logo" src="./assets/logo.png" alt="bank_logo">
+                <h2 id="heading">Selecciona la acción que deseas realizar</h2>
+                <div class="options">
+                    <p class="consultar" onclick="getSaldo()"><i class="fas fa-eye"></i><br>Consultar <br>Saldo</p>
+                    <p class="ingresar" onclick="ingresar()"><i class="fas fa-download"></i><br>Ingresar <br>Monto</p>
+                    <p class="retirar" onclick="retirar()"><i class="fas fa-upload"></i><br>Retirar <br>Monto</p>
+                </div>
+                <div id="check-saldo">
+                    <h2>Tienes un saldo de $<span id="saldo"></span><br>Pokedolares</h2>
+                    <button class="return" onclick="goBack()">Regresar</button>
+                </div>
+                <div id="add-money">
+                    <h2>Ingresa un monto a añadir</h2>
+                    <input type="number" id="moneyValue">
+                    <p id="add-content"></p>
+                    <button class="add" onclick="add()">Añadir</button>
+                    <button class="return" onclick="goBack()">Regresar</button>
+                </div>
+                <div id="take-money">
+                    <h2>Ingresa un monto a retirar</h2>
+                    <input type="number" id="moneyTake">
+                    <p id="take-content"></p>
+                    <button class="take" onclick="substract()">Retirar</button>
+                    <button class="return" onclick="goBack()">Regresar</button>
+                </div>
+            </div>
+        </div>
+        <img class="gameboy" src="./assets/gameboy.png" alt="gameboylogo">
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
